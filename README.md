@@ -3,7 +3,7 @@
 
 # Machine Learning Module Pure Python: Data Science Tools without Numpy or Scipy or SKLearn
 
-![Machine Learning Module Pure Python](https://github.com/ThomIves/MachineLearningPurePy/blob/master/Machine_Learning_Pure_Py.png)
+![Machine Learning Module Pure Python](https://github.com/ThomIves/MachineLearningPurePy/blob/master/Machine_Learning_Module_Repo.png)
 > This is a module of machine learning tools for data science using pure python WITHOUT numpy, scipy or sklearn and is covered in greater detail across several blog posts from https://integratedmlai.com/.
 
 Our goal is to better understand principles of machine learning tools by exploring how to code them ourselves ...
