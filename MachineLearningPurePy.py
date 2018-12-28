@@ -2,8 +2,8 @@ import LinearAlgebraPurePython as la
 import sys
 
 class Least_Squares:
-    def __init__(self, tol=1):
-        self.order = order
+    def __init__(self, fit_intercept=True, tol=0):
+        self.fit_intercept = fit_intercept
         self.tol = tol
 
     def __format_data_correctly(self, D):
@@ -25,16 +25,9 @@ class Least_Squares:
         num_rows_of_X = len(X)
         num_of_Xs = len(X[0])
 
-        if self.order > 1:
-            for row_num in range(num_rows_of_X):
-                temp_row = []
-                for i_of_x in range(num_of_Xs):
-                    for order in range(self.order):
-                        temp_row.append(X[row_num][i_of_x] ** (order+1.0))
-                X[row_num] = temp_row
-
-        for i in range(len(X)): 
-            X[i] = [1.0] + X[i]
+        if self.fit_intercept:
+            for i in range(len(X)): 
+                X[i] = [1.0] + X[i]
 
         if len(X) < len(X[0]):
             raise ArithmeticError('Inadequate number of inputs for model solution.')
